@@ -1,5 +1,6 @@
 class Student < ApplicationRecord
   # Associations
+  
   # Students are connected to professors through the courses they enroll in
   has_many :courses
   has_many :professors, through: :courses
